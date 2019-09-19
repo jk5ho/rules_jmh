@@ -21,6 +21,9 @@ def rules_jmh_maven_deps(
     )
 
 def jmh_java_benchmarks(name, srcs, deps=[], tags=[], plugins=[], **kwargs):
+    
+    print(srcs)
+    
     """Builds runnable JMH benchmarks.
 
     This rule builds a runnable target for one or more JMH benchmarks
